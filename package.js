@@ -1,13 +1,13 @@
 Package.describe({
-  name: 'meteoreact:accounts',
+  name: 'frpz:accounts',
   summary: 'Simple and intuative accounts view layer with react',
-  version: '1.2.4',
+  version: '1.3.1',
   documentation: 'README.md',
-  git: 'https://github.com/royGil/accounts-react'
+  git: 'https://github.com/frpz/frpz-accounts'
 })
 
 Package.onUse(api => {
-  api.versionsFrom('1.6.1')
+  api.versionsFrom('2.7.1')
 
   api.use([
     'ecmascript',
@@ -20,7 +20,7 @@ Package.onUse(api => {
   api.use('react-meteor-data@0.2.16', 'client')
 
   api.use('service-configuration', { weak: true })
-  api.use('http', 'server')
+  api.use('http@1.4.1', 'server')
 
   api.mainModule('index.js', ['client', 'server'])
 })
@@ -30,8 +30,8 @@ Package.onTest(api => {
     'ecmascript',
     'accounts-base',
     'accounts-password',
-    'meteoreact:accounts',
-    'meteoreact:accounts-unstyled',
+    'frpz:accounts',
+    'frpz:accounts-unstyled',
     'mdg:validated-method@1.1.0',
     'react-meteor-data@0.2.16',
     'cultofcoders:mocha'
