@@ -1,0 +1,30 @@
+{
+  "name": "useraccounts-react",
+  "version": "1.0.0",
+  "description": "Meteor's accounts view layer for react",
+  "main": "index.js",
+  "scripts": {
+    "publish": "meteor publish",
+    "test": "meteor test-packages ./ --driver-package cultofcoders:mocha --port 3006"
+  },
+  "author": "Roy Giladi",
+  "license": "MIT",
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "deepmerge": "^2.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.19.1",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-watch": "^3.1.3",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "sinon": "^4.5.0"
+  }
+}
